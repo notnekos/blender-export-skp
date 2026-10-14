@@ -1,0 +1,26 @@
+schema_version = "1.0.0"
+
+id = "skp_dwg_exporter"
+version = "1.0.0"
+name = "SketchUp SKP / DWG Exporter"
+tagline = "Export models to SketchUp .skp and AutoCAD .dwg"
+maintainer = "Blendwgskp"
+type = "add-on"
+
+tags = ["Import-Export"]
+
+blender_version_min = "4.2.0"
+
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
+
+[permissions]
+files = "Write exported .skp and .dwg files"
+
+[build]
+paths_exclude_pattern = [
+  "__pycache__/",
+  "/.git/",
+  "/tests/",
+]
